@@ -28,6 +28,7 @@ This module performs matrix multiplication between a given input `matrix` and a 
 ### **Example Calculation:**
 For a 3×3 matrix and kernel:
 $$
+  
 \begin{bmatrix}
 a_{11} & a_{12} & a_{13} \\
 a_{21} & a_{22} & a_{23} \\
