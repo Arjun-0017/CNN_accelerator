@@ -28,19 +28,14 @@ This module performs matrix multiplication between a given input `matrix` and a 
 ### **Example Calculation:**
 For a 3×3 matrix and kernel:
 
-\[
-\begin{bmatrix} a_1 & a_2 & a_3 \\ a_4 & a_5 & a_6 \\ a_7 & a_8 & a_9 \end{bmatrix}
-\]
+                         [ a<sub>1</sub> a<sub>2</sub> a<sub>3</sub> ]    
+                         [ a<sub>4</sub> a<sub>5</sub> a<sub>6</sub> ]    
+                         [ a<sub>7</sub> a<sub>8</sub> a<sub>9</sub> ]    
 
-\[
-\begin{bmatrix} b_1 & b_2 & b_3 \\ b_4 & b_5 & b_6 \\ b_7 & b_8 & b_9 \end{bmatrix}
-\]
+                         [ b<sub>1</sub> b<sub>2</sub> b<sub>3</sub> ]    
+                         [ b<sub>4</sub> b<sub>5</sub> b<sub>6</sub> ]    
+                         [ b<sub>7</sub> b<sub>8</sub> b<sub>9</sub> ]    
 
-The output is:
-
-\[
-(a_1 \times b_1) + (a_2 \times b_2) + ... + (a_9 \times b_9)
-\]
 
 ---
 
