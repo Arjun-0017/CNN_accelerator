@@ -72,11 +72,9 @@ This module performs **max pooling**, a technique used in convolutional neural n
 ### **Example Calculation:**
 For a 2×2 pooling window:
 $$
-   
 \begin{bmatrix}
-a_{1} & a_{2} & a_{3} \\
-a_{4} & a_{5} & a_{6} \\
-a_{7} & a_{8} & a_{9}
+3 & 7 \\
+5 & 2
 \end{bmatrix}
 $$
 
