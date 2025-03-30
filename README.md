@@ -28,7 +28,7 @@ This module performs matrix multiplication between a given input `matrix` and a 
 ### **Example Calculation:**
 For a 3×3 matrix and kernel:
 
-                         [ a <sub>1</sub> a<sub>2</sub> a<sub>3</sub> ]    
+                         [ a_{1} a<sub>2</sub> a<sub>3</sub> ]    
                          [ a <sub>4</sub> a<sub>5</sub> a<sub>6</sub> ]    
                          [ a <sub>7</sub> a<sub>8</sub> a<sub>9</sub> ]    
 
