@@ -51,11 +51,6 @@ $$
 (a_1 \times b_1) + (a_2 \times b_2) + \dots + (a_9 \times b_9)
 $$
 
-
-## Matrix Representation
-
-
-
 ---
 
 ## **2. ReLU Activation Function (`relu`)**
