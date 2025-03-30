@@ -21,9 +21,8 @@ This module performs matrix multiplication between a given input matrix and a ke
 
 ### Behavior:
 When rst is high, sum is reset to 0.\
-On every positive clock edge:\
-sum is reset to 0.
-
-A loop iterates through all elements of matrix and kernel, performing element-wise multiplication and accumulation.\
-The final sum is assigned to result.
+On every positive clock edge:
+  * sum is reset to 0.
+  * A loop iterates through all elements of matrix and kernel, performing element-wise multiplication and accumulation.
+  * The final sum is assigned to result.
 
