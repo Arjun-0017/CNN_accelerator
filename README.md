@@ -52,26 +52,8 @@ $$
 $$
 
 
-# Mathematical Expressions in README
-
-## Formula
-
-The formula is:
-
-$$
-(a_1 \times b_1) + (a_2 \times b_2) + \dots + (a_9 \times b_9)
-$$
-
 ## Matrix Representation
 
-The matrix is:
-
-$$
-\begin{bmatrix}
-3 & 7 \\
-5 & 2
-\end{bmatrix}
-$$
 
 
 ---
@@ -93,7 +75,9 @@ The Rectified Linear Unit (ReLU) function is used in deep learning. It ensures n
 This module performs **max pooling**, a technique used in convolutional neural networks (CNNs) to reduce dimensions while retaining important features.
 
 ### **Example Calculation:**
+
 For a 2×2 pooling window:
+
 $$
 \begin{bmatrix}
 3 & 7 \\
