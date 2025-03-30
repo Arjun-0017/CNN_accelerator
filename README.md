@@ -51,6 +51,14 @@ $$
               (a_{1}×b_{1})+(a_{1}×b_{1})+(a_{1}×b_{1})+.............(a_{1}×b_{1})
               \end
               $$
+## Mathematical Expression
+
+The formula is:
+
+$$
+(a_1 \times b_1) + (a_2 \times b_2) + \dots + (a_9 \times b_9)
+$$
+
 ---
 
 ## **2. ReLU Activation Function (`relu`)**
