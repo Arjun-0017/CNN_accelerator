@@ -1,6 +1,7 @@
 # CNN_accelerator
 CNN_accelerator for detection of side channel attack.\
 Based on preliminary sutdy, verilog code is written for the CNN based AI accelerator, which will detect Side Channel Attack.
+**Note**: This design is under development.
 
 # Hardware Modules for FPGA-based AI and Cryptography
 
