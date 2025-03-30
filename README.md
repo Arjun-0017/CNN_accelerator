@@ -28,13 +28,31 @@ This module performs matrix multiplication between a given input `matrix` and a 
 ### **Example Calculation:**
 For a 3×3 matrix and kernel:
 
-                         [ a_{1} a<sub>2</sub> a<sub>3</sub> ]    
+                         [ a₁ a<sub>3</sub> ]    
                          [ a <sub>4</sub> a<sub>5</sub> a<sub>6</sub> ]    
                          [ a <sub>7</sub> a<sub>8</sub> a<sub>9</sub> ]    
 
                          [ b<sub>1</sub> b<sub>2</sub> b<sub>3</sub> ]    
                          [ b<sub>4</sub> b<sub>5</sub> b<sub>6</sub> ]    
                          [ b<sub>7</sub> b<sub>8</sub> b<sub>9</sub> ]    
+
+                        [ a₁₁   a₁₂   a₁₃  ]
+                        [ a₂₁   a₂₂   a₂₃  ]
+                        [ a₃₁   a₃₂   a₃₃  ]
+
+
+## Matrix Representation in LaTeX
+
+You can display a matrix in a GitHub README using LaTeX:
+
+$$
+A =
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+$$
 
 
 ---
