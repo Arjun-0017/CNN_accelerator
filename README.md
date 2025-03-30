@@ -126,5 +126,3 @@ This module implements a simplified **AXI4 Slave** interface, which responds to 
 | `axi4_master` | Handles AXI4 master read/write operations. |
 | `axi4_slave`  | Implements an AXI4 slave for memory-mapped communication. |
 
-This design contains fundamental building blocks for a hardware-accelerated CNN, a cryptographic function, and AXI4 communication, useful for integration into FPGA or ASIC-based AI accelerators.
-
