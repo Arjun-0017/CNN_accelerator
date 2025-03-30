@@ -51,6 +51,29 @@ $$
 (a_1 \times b_1) + (a_2 \times b_2) + \dots + (a_9 \times b_9)
 $$
 
+
+# Mathematical Expressions in README
+
+## Formula
+
+The formula is:
+
+$$
+(a_1 \times b_1) + (a_2 \times b_2) + \dots + (a_9 \times b_9)
+$$
+
+## Matrix Representation
+
+The matrix is:
+
+$$
+\begin{bmatrix}
+3 & 7 \\
+5 & 2
+\end{bmatrix}
+$$
+
+
 ---
 
 ## **2. ReLU Activation Function (`relu`)**
