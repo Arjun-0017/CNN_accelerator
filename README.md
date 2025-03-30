@@ -15,3 +15,15 @@ This module performs matrix multiplication between a given input matrix and a ke
 **kernel**: A flattened 1D array of the same size as matrix.
 ### Outputs:
 **result**: The output value representing the sum of element-wise multiplications.
+### Internal Registers and Variables:
+**mult:** A register array that stores the element-wise multiplication results.
+**sum:** Accumulates the sum of these multiplications.
+
+### Behavior:
+When rst is high, sum is reset to 0.\
+On every positive clock edge:\
+sum is reset to 0.\
+
+A loop iterates through all elements of matrix and kernel, performing element-wise multiplication and accumulation.\
+The final sum is assigned to result.
+
