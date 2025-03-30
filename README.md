@@ -9,15 +9,15 @@ This module performs matrix multiplication between a given input matrix and a ke
 **SIZE**: Defines the dimension of the square matrix (default is 3×3).\
 **DATA_WIDTH**: Defines the bit-width of each matrix element (default is 8 bits).
 ### Inputs:
-**clk**: Clock signal.
-**rst**: Reset signal.
-**matrix**: A flattened 1D array containing SIZE × SIZE elements.
-**kernel**: A flattened 1D array of the same size as matrix.
+**clk**: Clock signal.\
+**rst**: Reset signal.\
+**matrix**: A flattened 1D array containing SIZE × SIZE elements.\
+**kernel**: A flattened 1D array of the same size as matrix.\
 ### Outputs:
-**result**: The output value representing the sum of element-wise multiplications.
+**result**: The output value representing the sum of element-wise multiplications.\
 ### Internal Registers and Variables:
-**mult:** A register array that stores the element-wise multiplication results.
-**sum:** Accumulates the sum of these multiplications.
+**mult:** A register array that stores the element-wise multiplication results.\
+**sum:** Accumulates the sum of these multiplications.\
 
 ### Behavior:
 When rst is high, sum is reset to 0.\
