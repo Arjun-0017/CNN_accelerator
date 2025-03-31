@@ -131,7 +131,7 @@ This module implements a simplified **AXI4 Slave** interface, which responds to 
 
 # AXI4 Master Interface (CNN Accelerator → VEGA)
 
-This part provides details about the AXI4 Master interface signals used for communication between CNN accelerator and VEGA. The table below maps Verilog signals to their corresponding VEGA AT1051 signals and describes their functionality.
+This section provides details about the AXI4 Master interface signals used for communication between CNN accelerator and VEGA. The table below maps Verilog signals to their corresponding VEGA AT1051 signals and describes their functionality.
 
 ## Signal Mapping Table
 
@@ -170,9 +170,9 @@ This part provides details about the AXI4 Master interface signals used for comm
 
 
 ---
-# AXI4 Slave Interface (VEGA → Your CNN Accelerator)
+# AXI4 Slave Interface (VEGA → CNN Accelerator)
 
-This part provides details about the AXI4 Slave interface signals used for communication between VEGA and CNN accelerator. The table below maps Verilog signals to their corresponding VEGA AT1051 signals and describes their functionality.
+This section provides details about the AXI4 Slave interface signals used for communication between VEGA and CNN accelerator. The table below maps Verilog signals to their corresponding VEGA AT1051 signals and describes their functionality.
 
 ## Signal Mapping Table
 
@@ -197,17 +197,34 @@ This part provides details about the AXI4 Slave interface signals used for commu
 
 - **Write Address (`awaddr`)**: Specifies the target memory address for write operations, sent by VEGA.
 - **Write Address Valid (`awvalid`)**: Indicates that the write address is valid and ready to be processed, sent by VEGA.
-- **Write Address Ready (`awready`)**: A signal indicating readiness of your CNN accelerator to receive the write address.
+- **Write Address Ready (`awready`)**: A signal indicating readiness of CNN accelerator to receive the write address.
 - **Write Data (`wdata`)**: Contains the actual data to be written, sent by VEGA.
 - **Write Data Valid (`wvalid`)**: Signals that the write data is valid and ready for transfer, sent by VEGA.
-- **Write Data Ready (`wready`)**: A signal indicating readiness of your CNN accelerator to receive write data.
-- **Write Response Valid (`bvalid`)**: Indicates that your CNN accelerator has processed the write operation and is sending a response.
+- **Write Data Ready (`wready`)**: A signal indicating readiness of CNN accelerator to receive write data.
+- **Write Response Valid (`bvalid`)**: Indicates that CNN accelerator has processed the write operation and is sending a response.
 - **Write Response Ready (`bready`)**: Signals readiness of VEGA to receive a response for a completed write operation.
 - **Read Address (`araddr`)**: Specifies the target memory address for read operations, sent by VEGA.
 - **Read Address Valid (`arvalid`)**: Indicates that the read address is valid and ready to be processed, sent by VEGA.
-- **Read Address Ready (`arready`)**: A signal indicating readiness of your CNN accelerator to receive the read address.
-- **Read Data (`rdata`)**: Contains the actual data read from the target memory address, sent by your CNN accelerator.
-- **Read Data Valid (`rvalid`)**: Indicates that the read data is valid and ready for transfer, sent by your CNN accelerator.
+- **Read Address Ready (`arready`)**: A signal indicating readiness of CNN accelerator to receive the read address.
+- **Read Data (`rdata`)**: Contains the actual data read from the target memory address, sent by CNN accelerator.
+- **Read Data Valid (`rvalid`)**: Indicates that the read data is valid and ready for transfer, sent by CNN accelerator.
 - **Read Ready (`rready`)**: Signals readiness of VEGA to receive read data.
+
+---
+# Clock and Reset
+
+This section describes the clock and reset signals used in the AXI4 interface.
+
+## Signal Mapping Table
+
+| **Verilog Signal** | **VEGA AT1051 Signal** | **Description**     |
+|---------------------|------------------------|---------------------|
+| `clk`              | `AXI_SIDE_CLK`        | AXI4 clock          |
+| `rst`              | `AXI_SIDE_RST_N`      | Active-low reset    |
+
+## Signal Descriptions
+
+- **Clock (`clk`)**: The main clock signal for the AXI4 interface, provided by VEGA (`AXI_SIDE_CLK`).
+- **Reset (`rst`)**: An active-low reset signal used to initialize or reset the AXI4 interface (`AXI_SIDE_RST_N`).
 
 ---
