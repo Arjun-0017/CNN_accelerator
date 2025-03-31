@@ -127,3 +127,43 @@ This module implements a simplified **AXI4 Slave** interface, which responds to 
 | `axi4_master` | Handles AXI4 master read/write operations. |
 | `axi4_slave`  | Implements an AXI4 slave for memory-mapped communication. |
 
+
+
+# AXI4 Master Interface (CNN Accelerator → VEGA)
+
+This part provides details about the AXI4 Master interface signals used for communication between CNN accelerator and VEGA. The table below maps Verilog signals to their corresponding VEGA AT1051 signals and describes their functionality.
+
+## Signal Mapping Table
+
+| **Verilog Signal** | **VEGA AT1051 Signal**     | **Description**                                      |
+|---------------------|----------------------------|------------------------------------------------------|
+| `awaddr`           | `AXI_SIDE_M0_AWADDR`      | Write address                                        |
+| `awvalid`          | `AXI_SIDE_M0_AWVALID`     | Write address valid                                 |
+| `awready`          | `AXI_SIDE_M0_AWREADY`     | Write address ready (input from VEGA)              |
+| `wdata`            | `AXI_SIDE_M0_WDATA`       | Write data                                          |
+| `wvalid`           | `AXI_SIDE_M0_WVALID`      | Write data valid                                   |
+| `wready`           | `AXI_SIDE_M0_WREADY`      | Write data ready (input from VEGA)                |
+| `bvalid`           | `AXI_SIDE_M0_BVALID`      | Write response valid (input from VEGA)            |
+| `bready`           | `AXI_SIDE_M0_BREADY`      | Write response ready                               |
+| `araddr`           | `AXI_SIDE_M0_ARADDR`      | Read address                                       |
+| `arvalid`          | `AXI_SIDE_M0_ARVALID`     | Read address valid                                 |
+| `arready`          | `AXI_SIDE_M0_ARREADY`     | Read address ready (input from VEGA)              |
+| `rdata`            | `AXI_SIDE_M0_RDATA`       | Read data (input from VEGA)                       |
+
+## Signal Descriptions
+
+- **Write Address (`awaddr`)**: Specifies the target memory address for write operations.
+- **Write Address Valid (`awvalid`)**: Indicates that the write address is valid and ready to be sent.
+- **Write Address Ready (`awready`)**: A signal from VEGA indicating readiness to receive the write address.
+- **Write Data (`wdata`)**: Contains the actual data to be written to the target memory address.
+- **Write Data Valid (`wvalid`)**: Signals that the write data is valid and ready for transfer.
+- **Write Data Ready (`wready`)**: A signal from VEGA indicating readiness to receive write data.
+- **Write Response Valid (`bvalid`)**: Indicates that VEGA has processed the write operation and is sending a response.
+- **Write Response Ready (`bready`)**: Signals readiness to receive a response for a completed write operation.
+- **Read Address (`araddr`)**: Specifies the target memory address for read operations.
+- **Read Address Valid (`arvalid`)**: Indicates that the read address is valid and ready to be sent.
+- **Read Address Ready (`arready`)**: A signal from VEGA indicating readiness to receive the read address.
+- **Read Data (`rdata`)**: Contains the actual data read from the target memory address.
+
+
+---
