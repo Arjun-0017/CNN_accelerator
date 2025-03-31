@@ -85,19 +85,7 @@ Output: `max_value = 7`
 
 ---
 
-## **4. AES S-Box Module (`aes_sbox`)**
-This module implements the AES S-box, a crucial part of AES encryption, which performs a nonlinear substitution.
-
-### **Behavior:**
-- Reads `sbox.hex` into an internal lookup table at startup.
-- Outputs the S-box transformation of `in_data`.
-
-### **Example:**
-If `in_data = 8'h63`, `out_data` might be `8'h7c` (assuming standard AES S-box mapping).
-
----
-
-## **5. AXI4 Master Module (`axi4_master`)**
+## **4. AXI4 Master Module (`axi4_master`)**
 This module implements a simplified **AXI4 Master** interface for reading and writing data to an AXI4 bus.
 
 ### **AXI4 Bus Signals:**
@@ -108,7 +96,7 @@ This module implements a simplified **AXI4 Master** interface for reading and wr
 
 ---
 
-## **6. AXI4 Slave Module (`axi4_slave`)**
+## **5. AXI4 Slave Module (`axi4_slave`)**
 This module implements a simplified **AXI4 Slave** interface, which responds to read/write requests from the master.
 
 ### **Behavior:**
