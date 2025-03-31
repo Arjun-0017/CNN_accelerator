@@ -216,3 +216,26 @@ This section describes the clock and reset signals used in the AXI4 interface.
 - **Reset (`rst`)**: An active-low reset signal used to initialize or reset the AXI4 interface (`AXI_SIDE_RST_N`).
 
 ---
+
+# Mapping CNN Accelerator Ports to AT1051 I/O
+
+This section describes the mapping of CNN accelerator ports to AT1051 I/O signals.
+
+## Port Mapping Table
+
+| **Verilog Signal** | **VEGA AT1051 Signal** | **Description**                                      |
+|---------------------|------------------------|------------------------------------------------------|
+| `clk`              | `AXI_SIDE_CLK`        | AXI clock input                                      |
+| `rst`              | `AXI_SIDE_RST_N`      | AXI active low reset                                 |
+| `input_matrix`     | `AXI_SIDE_M0_RDATA`   | Reading input feature map from memory               |
+| `kernel`           | `AXI_SIDE_M0_RDATA`   | Reading kernel weights from memory                  |
+| `max_output`       | `AXI_SIDE_M0_WDATA`   | Writing the processed output back to memory         |
+
+## Signal Descriptions
+
+- **clk** → `AXI_SIDE_CLK`: AXI clock input
+- **rst** → `AXI_SIDE_RST_N`: AXI active low reset
+- **input_matrix** → AXI4 Read Data Channel (`AXI_SIDE_M0_RDATA`): Reading input feature map from memory
+- **kernel** → AXI4 Read Data Channel (`AXI_SIDE_M0_RDATA`): Reading kernel weights from memory
+- **max_output** → AXI4 Write Data Channel (`AXI_SIDE_M0_WDATA`): Writing the processed output back to memory
+---
