@@ -105,6 +105,14 @@ This module implements a simplified **AXI4 Slave** interface, which responds to 
 
 ---
 
+## **6. CNN Based hardware accelerator Module (`CNN_accelerator`)**
+This module integrates `matrix_mult`, `relu`, `maxpool` modules.
+
+---
+
+
+
+
 ## **Summary of modules**
 | Module        | Function |
 |--------------|----------|
